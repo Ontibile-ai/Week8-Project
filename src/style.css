@@ -46,7 +46,7 @@ p {
   font-weight: 500;
 }
 p strong {
-  color: red;
+  color: #f65282;
   font-weight: 700;
 }
 
@@ -69,6 +69,37 @@ p strong {
 .temperature-unit {
   margin-top: 6px;
   font-size: 28px;
+}
+.weather-forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.forecast-date {
+  text-align: center;
+  font-size: 16px;
+  color: #888;
+  line-height: 24px;
+}
+
+.forecast-icon {
+  text-align: center;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.forecast-temperature {
+  text-align: center;
+  font-size: 16px;
+  color: #f65282;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.forecast-temperature1 {
+  padding: 0 10px;
 }
 
 .city-info {
