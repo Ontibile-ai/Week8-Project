@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+
+<title>Weather Forecast</title>
+
+  </head>
+  <body>
+    <div class="container">
+      
+    <header>
+      <form class="search-form" id="search-form">
+        <input type="search"
+         placeholder="Enter city name..." required
+         class="search-input" 
+         id="search-input"/>
+        <input type="submit"
+         value="Search" 
+         class="search-button"/>
+      </form>
+    </header>
+    <main>
+
+<div class="city-info">
+  <div>
+      <h1 id="city"></h1>
+        
+      <p><span id="time"></span>, <span id="description"></span>
+      </br>
+      Humidity:<strong id="humidity"></strong>, Wind: <strong id="wind"></strong></p>
+    </div>
+      
+      <div class="temperature-container">
+      <div  id="icon"><img class="temperature-icon"src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"></div>
+      <div class="temperature-value" id="temperature"></div>
+      <div class="temperature-unit">°C</div>
+        
+      </div>
+      </div>
+    </main>
+    <footer>
+      This project is coded by
+      <a href="https://github.com/Ontibile-ai">Ontibile Mmusi</a> and is
+      open-sourced on
+      <a href="https://github.com/Ontibile-ai/Week7-Weather"> GitHub</a> and
+      hosted on
+      <a href="https://week7-weather.netlify.app/"> Netlify</a>
+    </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
