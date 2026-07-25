@@ -86,8 +86,10 @@ p strong {
 }
 
 .forecast-icon {
-  text-align: center;
-  font-size: 32px;
+  width: 70px;
+  height: 70px;
+  display: block;
+  margin: 0 auto;
 }
 
 .forecast-temperature {
